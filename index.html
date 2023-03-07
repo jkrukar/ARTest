@@ -11,7 +11,7 @@
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
     <script>
-        console.log("test AR 3");
+        console.log("test AR 4");
     </script>
 </head>
 
@@ -21,23 +21,13 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-        <!-- <a-marker preset='hiro'> -->
-
         <a-marker preset=’custom’ type=’pattern’ url="./epQRPattern.patt">
-
-        <!-- <a-box position='0 1 0'></a-box> -->
 
         <a-entity gltf-model="./magnemite/scene.gltf" rotation="0 0 0" scale="0.15 0.15 0.15" position="0 0 0"/>
 
         </a-marker>
 
         <a-entity camera></a-entity>
-
-        <!-- <a-marker preset=’custom’ type=’pattern’ url=’/PATH/TO/YOUR/MARKER.patt’> -->
-        
-        <!-- <a-camera gps-camera rotation-reader></a-camera> -->
-
-        <!-- <a-entity gltf-model="./magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" position="0 1 0" animation-mixer/> -->
         
 	</a-scene>
 
