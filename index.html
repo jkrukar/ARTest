@@ -28,7 +28,15 @@
         
         <!-- <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9"></a-box> -->
         <!-- <a-entity gltf-model="./pizzaCropDec_10gltf.gltf" rotation="0 0 0" scale="1 1 1" position="0 0 0"/> -->
-        <a-entity gltf-model="./arPizza2/pizzaAR1.gltf" rotation="90 0 0" scale="4.34 4.34 4.34"/>
+        <a-entity gltf-model="./arPizza2/pizzaAR1.gltf" rotation="90 0 0" scale="4.34 4.34 4.34">
+            
+            <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+               
+        </a-entity>
 
         </a-marker>
 
