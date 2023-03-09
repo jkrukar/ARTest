@@ -17,7 +17,7 @@
 
 <body style='margin: 0; overflow: hidden;'>
 
-    <script>
+<!--     <script>
 
         AFRAME.registerComponent('registerevents', {
             init: function(){
@@ -41,33 +41,34 @@
             }});
         
 
-    </script>
+    </script> -->
 
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false; patternRatio: 0.90'
-        renderer="antialias: false; logarithmicDepthBuffer:true"
+        renderer="antialias: false; logarithmicDepthBuffer:true;"
         >
 
         <!-- <a-marker-camera preset='hiro'> -->
-        <!-- <a-marker-camera preset="pattern" type="pattern" patternUrl="./pattern-epARQR3.patt"> -->
-        <a-marker preset="pattern" type="pattern" url="./pattern-markerTrainingImage4.patt">
+        <!-- <a-marker preset="pattern" type="pattern" url="./pattern-markerTrainingImage4.patt"> -->
+        <a-marker-camera preset="pattern" type="pattern" url="./pattern-markerTrainingImage4.patt">
         
         <a-entity gltf-model="./arPizza2/pizzaAR1.gltf" rotation="90 0 0" scale="1 1 1">
 	
-		<a-animation attribute="rotation"
-               dur="500"
-               fill="forwards"
-               to="0 0 360"
-               repeat="indefinite"></a-animation>
+<!-- 		<a-animation attribute="rotation"
+               dur="5000"
+               fill="none"
+               from="90 0 0"
+               to="90 0 360"
+               repeat="indefinite"></a-animation> -->
 		
 	</a-entity>
 
         </a-marker>
 
         <!-- <a-entity camera gps-camera rotation-reader></a-entity> -->
-        <a-entity camera></a-entity>
+        <!-- <a-entity camera></a-entity> -->
         
 	</a-scene>
 
@@ -81,3 +82,8 @@
     </script> -->
 
 </body>
+
+<!-- aframe/src/component-anchor.js, but it does so in a couple of different places. If you click on that link (https://github.com/jeromeetienne/AR.js/pull/303/files#diff-d6e4c48405c28cfbbe2952ef505ed7f6) , you’ll see in green the lines that should be added to the current component-anchor.js file. Once that’s been changed, navigate to the root aframe directory and run make build && make minify to produce and overwrite the .js and .min.js scripts for your projects. -->
+
+
+<!-- renderer="antialias: true; logarithmicDepthBuffer:true; colorManagement:true; sortObjects: true" -->
