@@ -54,16 +54,17 @@
         <!-- <a-marker preset="pattern" type="pattern" url="./pattern-markerTrainingImage4.patt"> -->
         <a-marker-camera preset="pattern" type="pattern" url="./pattern-markerTrainingImage2.patt">
         
-        <a-entity gltf-model="./arPizza2/pizzaAR1.gltf" rotation="90 0 0" scale="1 1 1">
+        <a-entity gltf-model="./arPizza2/pizzaAR1.gltf" rotation="90 0 0" scale="1 1 1"
+        animation="property: rotation; from: 90 0 0; to: 90 360 0; loop: true; dur: 10000">
 	
-		<a-animation attribute="rotation"
+<!-- 		<a-animation attribute="rotation"
                dur="5000"
                fill="forwards"
                from="90 0 0"
                to="90 180 180"
-               repeat="indefinite"></a-animation>
+               repeat="indefinite"></a-animation> -->
 		
-	</a-entity>
+	   </a-entity>
 
         </a-marker>
 
