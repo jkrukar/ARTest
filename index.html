@@ -38,8 +38,8 @@
                     console.log('markerLost',markerId);
                 });
 
-            });
-        });
+            }});
+        
 
     </script>
 
@@ -71,5 +71,13 @@
         
 	</a-scene>
 
-    
+    <!-- <script>
+
+        const sceneEl = document.querySelector('a-scene');
+        sceneEl.addEvenListener('loaded', () => {
+            sceneEl.camera = new THREEx.PerspectiveCamera();
+        });
+
+    </script> -->
+
 </body>
